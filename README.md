@@ -3,7 +3,7 @@ Set up your computer application and environment.
 
 ## Usage
 
-Use the PowerShell5 to run idenv.
+Use the PowerShell5 to run idenv. It run may exit powershell.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
