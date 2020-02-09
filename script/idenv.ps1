@@ -1,3 +1,9 @@
+function setupVirutalEnvironmentByVagrant(){
+    mkdir $env:USERPROFILE\vagrantenv
+    cd $env:USERPROFILE\vagrantenv
+    vagrant init generic/centos8
+}
+
 function setupVscodeExtensions(){
     code --install-extension ms-vscode.powershell
 }
@@ -10,6 +16,8 @@ function main(){
     scoop install github
     scoop install vscode
     setupVscodeExtensions
+    scoop install vagrant
+    setupVirutalEnvironmentByVagrant
 }
 
 main

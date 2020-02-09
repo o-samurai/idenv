@@ -16,9 +16,12 @@ iwr -useb https://raw.githubusercontent.com/o-samurai/idenv/master/script/idenv.
 ## Install applications
 
 - [Scoop](https://github.com/lukesampson/scoop)
- - [aria2](https://github.com/aria2/aria2)
- - [7zip](https://www.7-zip.org/)
- - [git](https://gitforwindows.org/)
- - [github](https://desktop.github.com/)
- - [vscode](https://code.visualstudio.com/)
-    - ms-vscode.powershell
+    - [aria2](https://github.com/aria2/aria2)
+    - [7zip](https://www.7-zip.org/)
+    - [git](https://gitforwindows.org/)
+    - [github](https://desktop.github.com/)
+    - [vscode](https://code.visualstudio.com/)
+        - ms-vscode.powershell
+    - [vagrant](https://www.vagrantup.com/)
+        * \*To use Vagrant, you must ensure the Hyper-V is disabled. [See vagrant installtion description.](https://www.vagrantup.com/docs/installation/)\*
+        - [generic/centos8](https://app.vagrantup.com/generic/boxes/centos8)
