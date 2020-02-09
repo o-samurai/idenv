@@ -21,4 +21,4 @@ iwr -useb https://raw.githubusercontent.com/o-samurai/idenv/master/script/idenv.
  - [git](https://gitforwindows.org/)
  - [github](https://desktop.github.com/)
  - [vscode](https://code.visualstudio.com/)
-  - ms-vscode.powershell
+    - ms-vscode.powershell
