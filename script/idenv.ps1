@@ -1,6 +1,6 @@
 function setupVirutalEnvironmentByVagrant(){
     mkdir $env:USERPROFILE\vagrantenv
-    cd $env:USERPROFILE\vagrantenv
+    Set-Location $env:USERPROFILE\vagrantenv
     vagrant init generic/centos8
 }
 
