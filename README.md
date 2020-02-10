@@ -1,6 +1,11 @@
 # idenv
 Set up your computer application and environment.
 
+## Prerequisite
+
+- Powershell5 to run script.
+- [Virtualbox](https://www.virtualbox.org/) for environment on vagrant.
+
 ## Usage
 
 Use the PowerShell5 to run idenv. It run may exit powershell.
