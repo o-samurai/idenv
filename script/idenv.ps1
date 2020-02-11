@@ -12,6 +12,7 @@ function main(){
     Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
     scoop install aria2
+    scoop bucket add extras
     scoop install git
     scoop install github
     scoop install vscode
