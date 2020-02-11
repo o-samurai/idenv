@@ -6,6 +6,7 @@ function setupVirutalEnvironmentByVagrant(){
 
 function setupVscodeExtensions(){
     code --install-extension ms-vscode.powershell
+    code --install-extension editorconfig.editorconfig
 }
 
 function main(){
