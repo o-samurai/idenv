@@ -4,6 +4,7 @@ function setupVirutalEnvironmentByVagrant(){
     vagrant init generic/centos8
     # Download
     (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/Vagrantfile',"$env:USERPROFILE\vagrantenv\centos8\Vagrantfile")
+    (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/playbook.yml',"$env:USERPROFILE\vagrantenv\centos8\playbook.yml")
     Set-Location $env:USERPROFILE
 }
 

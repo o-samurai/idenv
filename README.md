@@ -30,3 +30,4 @@ iwr -useb https://raw.githubusercontent.com/o-samurai/idenv/master/script/idenv.
     - [vagrant](https://www.vagrantup.com/)
         * \*To use Vagrant, you must ensure the Hyper-V is disabled. [See vagrant installtion description.](https://www.vagrantup.com/docs/installation/)\*
         - [generic/centos8](https://app.vagrantup.com/generic/boxes/centos8)
+            - [ansible](https://www.ansible.com/)
