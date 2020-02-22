@@ -6,3 +6,7 @@
       dnf:
         name: '*'
         state: latest
+    - name: git
+      dnf:
+        name: 'git'
+        state: latest
