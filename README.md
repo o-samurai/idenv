@@ -3,7 +3,9 @@ Set up your computer application and environment.
 
 ## Prerequisite
 
-- Powershell5 to run script.
+- Windows 10 Pro or Windows 10 Enterprise.
+ - PowerShell 5
+ - OpenSSH Client
 - [Virtualbox](https://www.virtualbox.org/) for environment on vagrant.
 
 ## Usage

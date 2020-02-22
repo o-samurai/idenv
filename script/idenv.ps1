@@ -1,3 +1,9 @@
+function integrateVscodeRemoteDevAndVagrantVirtualEnv(){
+    Set-Location $env:USERPROFILE\vagrantenv\centos8
+    vagrant ssh-config > $env:USERPROFILE/.ssh/config
+    Set-Location $env:USERPROFILE
+}
+
 function setupVirutalEnvironmentByVagrant(){
     mkdir $env:USERPROFILE\vagrantenv\centos8
     Set-Location $env:USERPROFILE\vagrantenv\centos8
@@ -10,19 +16,28 @@ function setupVirutalEnvironmentByVagrant(){
 
 function setupVscodeExtensions(){
     code --install-extension ms-vscode.powershell
+    code --install-extension ms-vscode-remote.vscode-remote-extensionpack
     code --install-extension editorconfig.editorconfig
+    code --install-extension eamodio.gitlens
+    code --install-extension jebbs.plantuml
 }
 
-function install(){
-    Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+function installByScoop(){
     scoop install aria2
     scoop bucket add extras
     scoop install git
     scoop install github
+    scoop install notepadplusplus
     scoop install vscode
-    setupVscodeExtensions
     scoop install vagrant
+}
+
+function install(){
+    Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+    installByScoop
+    setupVscodeExtensions
     setupVirutalEnvironmentByVagrant
+    integrateVscodeRemoteDevAndVagrantVirtualEnv
 }
 
 install
