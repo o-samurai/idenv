@@ -31,10 +31,10 @@ iwr -useb https://raw.githubusercontent.com/o-samurai/idenv/master/script/idenv.
         - ms-vscode.powershell
     - [vagrant](https://www.vagrantup.com/)
         * \*To use Vagrant, you must ensure the Hyper-V is disabled. [See vagrant installtion description.](https://www.vagrantup.com/docs/installation/)\*
-        - [generic/centos8](https://app.vagrantup.com/generic/boxes/centos8)
+        - [generic/centos8](https://app.vagrantup.com/generic/boxes/centos8) (disabled)
             - [ansible](https://www.ansible.com/)
             * docker is unavailable.
-        - [generic/centos7](https://app.vagrantup.com/generic/boxes/centos7)
+        - [generic/centos7](https://app.vagrantup.com/generic/boxes/centos7) (default)
             - [ansible](https://www.ansible.com/)
             - [docker](https://www.docker.com/)
 
