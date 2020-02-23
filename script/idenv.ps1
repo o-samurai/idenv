@@ -29,12 +29,15 @@ function setupVirutalEnvironmentByVagrant(){
     setupCentos7OnVagrant
 }
 
-function setupVscodeExtensions(){
+function setupVscode(){
+    # Install extensions
     code --install-extension ms-vscode.powershell
     code --install-extension ms-vscode-remote.vscode-remote-extensionpack
     code --install-extension editorconfig.editorconfig
     code --install-extension eamodio.gitlens
     code --install-extension jebbs.plantuml
+    # Configure settings
+    cscript /nologo /e:JScript vscodeconfiguration.js $env:USERPROFILE\AppData\Roaming\Code\User\settings.json ..\resource\vscode\disablepreview.json
 }
 
 function installByScoop(){
@@ -50,7 +53,7 @@ function installByScoop(){
 function install(){
     Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
     installByScoop
-    setupVscodeExtensions
+    setupVscode
     setupVirutalEnvironmentByVagrant
     integrateVscodeRemoteDevAndVagrantVirtualEnv
 }
