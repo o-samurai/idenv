@@ -9,8 +9,12 @@ function setupCentos7OnVagrant(){
     Set-Location $env:USERPROFILE\vagrantenv\centos7
     vagrant init generic/centos7
     # Download
-    (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos7/Vagrantfile',"$env:USERPROFILE\vagrantenv\centos7\Vagrantfile")
-    (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos7/playbook.yml',"$env:USERPROFILE\vagrantenv\centos7\playbook.yml")
+    (New-Object Net.Webclient).downloadFile(
+        'https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos7/Vagrantfile',
+        "$env:USERPROFILE\vagrantenv\centos7\Vagrantfile")
+    (New-Object Net.Webclient).downloadFile(
+        'https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos7/playbook.yml',
+        "$env:USERPROFILE\vagrantenv\centos7\playbook.yml")
     Set-Location $env:USERPROFILE
 }
 
@@ -19,8 +23,12 @@ function setupCentos8OnVagrant(){
     Set-Location $env:USERPROFILE\vagrantenv\centos8
     vagrant init generic/centos8
     # Download
-    (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/Vagrantfile',"$env:USERPROFILE\vagrantenv\centos8\Vagrantfile")
-    (New-Object Net.Webclient).downloadFile('https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/playbook.yml',"$env:USERPROFILE\vagrantenv\centos8\playbook.yml")
+    (New-Object Net.Webclient).downloadFile(
+        'https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/Vagrantfile',
+        "$env:USERPROFILE\vagrantenv\centos8\Vagrantfile")
+    (New-Object Net.Webclient).downloadFile(
+        'https://raw.githubusercontent.com/o-samurai/idenv/master/resource/vagrant/centos8/playbook.yml',
+        "$env:USERPROFILE\vagrantenv\centos8\playbook.yml")
     Set-Location $env:USERPROFILE
 }
 
