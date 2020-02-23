@@ -46,6 +46,7 @@ function setupVscode(){
     code --install-extension jebbs.plantuml
     # Configure settings
     cscript /nologo /e:JScript vscodeconfiguration.js $env:USERPROFILE\AppData\Roaming\Code\User\settings.json ..\resource\vscode\disablepreview.json
+    cscript /nologo /e:JScript vscodeconfiguration.js $env:USERPROFILE\AppData\Roaming\Code\User\settings.json ..\resource\vscode\editorruler.json
 }
 
 function installByScoop(){
