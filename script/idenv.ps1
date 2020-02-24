@@ -38,6 +38,7 @@ function setupVirutalEnvironmentByVagrant(){
 }
 
 function setupVscode(){
+    # This function may be replace Extesion that is Setting Sync(https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
     # Install extensions
     code --install-extension ms-vscode.powershell
     code --install-extension ms-vscode-remote.vscode-remote-extensionpack
