@@ -6,9 +6,14 @@
       yum:
         name: '*'
         state: latest
+    - name: install IUS repository
+      yum:
+        name: https://centos7.iuscommunity.org/ius-release.rpm
+        state: latest
     - name: install dev tools
       yum:
-        name: 'git'
+        # git default version is 1.8.x on centos7. Installing it version 2.x that is retrieve from IUS repo.
+        name: 'git216'
         state: latest
     - name: install docker drive utils
       yum:
