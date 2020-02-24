@@ -45,6 +45,7 @@ function setupVscode(){
     code --install-extension editorconfig.editorconfig
     code --install-extension eamodio.gitlens
     code --install-extension jebbs.plantuml
+    code --install-extension ms-azuretools.vscode-docker
     # Configure settings
     cscript /nologo /e:JScript vscodeconfiguration.js $env:USERPROFILE\AppData\Roaming\Code\User\settings.json ..\resource\vscode\disablepreview.json
     cscript /nologo /e:JScript vscodeconfiguration.js $env:USERPROFILE\AppData\Roaming\Code\User\settings.json ..\resource\vscode\editorruler.json

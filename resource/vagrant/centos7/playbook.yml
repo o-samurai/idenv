@@ -41,3 +41,13 @@
         name: docker
         state: started
         enabled: yes
+    - name: pull default docker image
+      docker_container:
+        name: centos
+        source: pull
+    - name: create default docker conrainer
+      docker_container:
+        name: centos_default
+        image: centos
+        volumes:
+          - name: /vagrant
