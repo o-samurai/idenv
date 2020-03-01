@@ -43,11 +43,11 @@
         enabled: yes
     - name: pull default docker image
       docker_container:
-        name: centos
+        name: centos7
         source: pull
     - name: create default docker conrainer
       docker_container:
-        name: centos_default
-        image: centos
+        name: centos
+        image: centos:centos7
         volumes:
-          - name: /vagrant
+          - name: /vagrant:/wine
